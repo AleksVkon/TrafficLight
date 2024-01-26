@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,9 +27,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="TurnTheLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DAI-ac-Sml"/>
                                     <action selector="actionButtonIsTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uc2-vG-Wnt"/>
-                                    <action selector="actionButtonIsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqv-Wd-dZj"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAV-ke-tMl">
@@ -70,8 +69,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="GreenLight" destination="3P7-dT-e7i" id="LIO-oK-KIq"/>
                         <outlet property="actionButton" destination="LqP-qp-SGB" id="rDO-ey-LMA"/>
+                        <outlet property="greenLight" destination="3P7-dT-e7i" id="Nvn-8p-3Ba"/>
                         <outlet property="redLight" destination="sAV-ke-tMl" id="fV4-25-1aa"/>
                         <outlet property="yellowLight" destination="2sD-ro-KcI" id="m3w-vP-jEb"/>
                     </connections>

@@ -27,7 +27,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionButtonIsTaped(_ sender: UIButton) {
-        
+        sender.setTitle("Next", for: .normal)
+        if redLight.alpha == 1 {
+            redLight.alpha = 0.3
+            yellowLight.alpha = 1
+        } else if yellowLight.alpha == 1 {
+            yellowLight.alpha = 0.3
+            greenLight.alpha = 1
+        } else if greenLight.alpha == 1 {
+            greenLight.alpha = 0.3
+            redLight.alpha = 1
+        } else {
+            redLight.alpha = 1
+        }
     }
 }
 
